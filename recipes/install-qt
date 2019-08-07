@@ -13,9 +13,9 @@ ENVFILE=${QT_target_catalog}/qt-${QT_VERSION}.env
 echo Installing Qt
 
 
-extract-qt-installer $PWD/$INSTALLER ${QT_target_catalog}//Qt
+extract-qt-installer $PWD/$INSTALLER ${QT_target_catalog}/
 
 echo Create $ENVFILE
 cat << EOF > $ENVFILE
-export PATH=${QT_target_catalog}/Qt/${QT_VERSION}/gcc_64/bin:$PATH
+export PATH=${QT_target_catalog}/${QT_VERSION}/gcc_64/bin:$PATH
 EOF
